@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/updateDataButton">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/bmiTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/myTextColor"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"
+                android:textSize="27sp" />
+
+            <TextView
+                android:id="@+id/bmiRatingTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/myTextColor"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"
+                android:textSize="27sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <ProgressBar
+                    android:id="@+id/bmiProgressBar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:max="40"
+                    android:progress="18"
+                    android:progressDrawable="@drawable/rounded_progress"
+                    android:secondaryProgress="25" />
+
+                <ImageView
+                    android:id="@+id/bmiIndicator"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/bmi_indicator" />
+
+            </RelativeLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Zapotrzebowanie kaloryczne"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/caloricNeedTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="24sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Poziom zaawansowania treningowego"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/trainingLevelTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="24sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Zapotrzebowanie kaloryczne do redukcji"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/caloricNeedForFatLossTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="24sp" />
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Zapotrzebowanie kaloryczne do masy"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/caloricNeedForMuscleGainTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="24sp" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/updateDataButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Aktualizuj dane"
+        app:neumorph_backgroundColor="@color/orange"
+        app:neumorph_shadowColorDark="@color/shadow_dark"
+        app:neumorph_shadowColorLight="@color/shadow_light"
+        app:neumorph_shapeType="flat" />
+
+</RelativeLayout>

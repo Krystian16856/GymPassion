@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/set_number"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        style="@style/myTextColor"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="8dp" />
+
+    <TextView
+        android:id="@+id/prev_week_result"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        style="@style/myTextColor"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:padding="8dp" />
+
+    <EditText
+        android:id="@+id/current_repetitions_sets"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        style="@style/myTextColor"
+        android:layout_weight="2"
+        android:inputType="number"
+        android:gravity="center"
+        android:padding="8dp"
+        android:focusableInTouchMode="true" />
+
+    <EditText
+        android:id="@+id/current_weight"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        style="@style/myTextColor"
+        android:layout_weight="1"
+        android:inputType="numberDecimal"
+        android:gravity="center"
+        android:padding="8dp"
+        android:focusableInTouchMode="true" />
+
+</TableRow>

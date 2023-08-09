@@ -1,0 +1,56 @@
+[debug] [2023-08-08T04:40:20.256Z] ----------------------------------------------------------------------
+[debug] [2023-08-08T04:40:20.259Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\kryst\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only functions
+[debug] [2023-08-08T04:40:20.259Z] CLI Version:   12.4.7
+[debug] [2023-08-08T04:40:20.260Z] Platform:      win32
+[debug] [2023-08-08T04:40:20.260Z] Node Version:  v20.4.0
+[debug] [2023-08-08T04:40:20.260Z] Time:          Tue Aug 08 2023 06:40:20 GMT+0200 (czas środkowoeuropejski letni)
+[debug] [2023-08-08T04:40:20.260Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-08-08T04:40:20.335Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-08-08T04:40:20.336Z] > authorizing via signed-in user (krystiantalerczyk@gmail.com)
+[debug] [2023-08-08T04:40:20.336Z] [iam] checking project gympassion-179b2 for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]
+[debug] [2023-08-08T04:40:20.338Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/gympassion-179b2:testIamPermissions [none]
+[debug] [2023-08-08T04:40:20.338Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/gympassion-179b2:testIamPermissions x-goog-quota-user=projects/gympassion-179b2
+[debug] [2023-08-08T04:40:20.338Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/gympassion-179b2:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]}
+[debug] [2023-08-08T04:40:30.877Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/gympassion-179b2:testIamPermissions 200
+[debug] [2023-08-08T04:40:30.877Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/gympassion-179b2:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]}
+[debug] [2023-08-08T04:40:30.878Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/gympassion-179b2/serviceAccounts/gympassion-179b2@appspot.gserviceaccount.com:testIamPermissions [none]
+[debug] [2023-08-08T04:40:30.879Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/gympassion-179b2/serviceAccounts/gympassion-179b2@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2023-08-08T04:40:37.291Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/gympassion-179b2/serviceAccounts/gympassion-179b2@appspot.gserviceaccount.com:testIamPermissions 200
+[debug] [2023-08-08T04:40:37.292Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/gympassion-179b2/serviceAccounts/gympassion-179b2@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[info] 
+[info] === Deploying to 'gympassion-179b2'...
+[info] 
+[info] i  deploying functions 
+[debug] [2023-08-08T04:40:37.303Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/gympassion-179b2 [none]
+[debug] [2023-08-08T04:40:46.530Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/gympassion-179b2 200
+[debug] [2023-08-08T04:40:46.531Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/gympassion-179b2 {"projectId":"gympassion-179b2","projectNumber":"68574499833","displayName":"GymPassion","name":"projects/gympassion-179b2","resources":{"hostingSite":"gympassion-179b2","storageBucket":"gympassion-179b2.appspot.com","locationId":"europe-central2"},"state":"ACTIVE","etag":"1_8dfe9d6f-50ea-4f94-8fd9-4ee506ce88ce"}
+[info] i  functions: preparing codebase default for deployment 
+[info] i  functions: ensuring required API cloudfunctions.googleapis.com is enabled... 
+[info] i  functions: ensuring required API cloudbuild.googleapis.com is enabled... 
+[info] i  artifactregistry: ensuring required API artifactregistry.googleapis.com is enabled... 
+[debug] [2023-08-08T04:40:46.543Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/gympassion-179b2/services/cloudfunctions.googleapis.com [none]
+[debug] [2023-08-08T04:40:46.544Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/gympassion-179b2/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/gympassion-179b2
+[debug] [2023-08-08T04:40:46.550Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/gympassion-179b2/services/runtimeconfig.googleapis.com [none]
+[debug] [2023-08-08T04:40:46.551Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/gympassion-179b2/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/gympassion-179b2
+[debug] [2023-08-08T04:40:46.555Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/gympassion-179b2/services/cloudbuild.googleapis.com [none]
+[debug] [2023-08-08T04:40:46.555Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/gympassion-179b2/services/cloudbuild.googleapis.com x-goog-quota-user=projects/gympassion-179b2
+[debug] [2023-08-08T04:40:46.559Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/gympassion-179b2/services/artifactregistry.googleapis.com [none]
+[debug] [2023-08-08T04:40:46.560Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/gympassion-179b2/services/artifactregistry.googleapis.com x-goog-quota-user=projects/gympassion-179b2
+[debug] [2023-08-08T04:40:55.573Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/gympassion-179b2/services/runtimeconfig.googleapis.com 200
+[debug] [2023-08-08T04:40:55.574Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/gympassion-179b2/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2023-08-08T04:40:55.577Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/gympassion-179b2/services/cloudfunctions.googleapis.com 200
+[debug] [2023-08-08T04:40:55.578Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/gympassion-179b2/services/cloudfunctions.googleapis.com [omitted]
+[info] +  functions: required API cloudfunctions.googleapis.com is enabled 
+[debug] [2023-08-08T04:40:56.077Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/gympassion-179b2/services/artifactregistry.googleapis.com 200
+[debug] [2023-08-08T04:40:56.077Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/gympassion-179b2/services/artifactregistry.googleapis.com [omitted]
+[info] +  artifactregistry: required API artifactregistry.googleapis.com is enabled 
+[debug] [2023-08-08T04:40:56.083Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/gympassion-179b2/services/cloudbuild.googleapis.com 200
+[debug] [2023-08-08T04:40:56.083Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/gympassion-179b2/services/cloudbuild.googleapis.com [omitted]
+[info] +  functions: required API cloudbuild.googleapis.com is enabled 
+[debug] [2023-08-08T04:40:56.085Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/gympassion-179b2/adminSdkConfig [none]
+[debug] [2023-08-08T04:41:00.792Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/gympassion-179b2/adminSdkConfig 200
+[debug] [2023-08-08T04:41:00.793Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/gympassion-179b2/adminSdkConfig {"projectId":"gympassion-179b2","storageBucket":"gympassion-179b2.appspot.com","locationId":"europe-central2"}
+[debug] [2023-08-08T04:41:00.794Z] >>> [apiv2][query] GET https://runtimeconfig.googleapis.com/v1beta1/projects/gympassion-179b2/configs [none]
+[debug] [2023-08-08T04:41:10.591Z] <<< [apiv2][status] GET https://runtimeconfig.googleapis.com/v1beta1/projects/gympassion-179b2/configs 200
+[debug] [2023-08-08T04:41:10.592Z] <<< [apiv2][body] GET https://runtimeconfig.googleapis.com/v1beta1/projects/gympassion-179b2/configs {}

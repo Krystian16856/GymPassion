@@ -1,0 +1,79 @@
+<soup.neumorphism.NeumorphCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/day_card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="12dp"
+    app:neumorph_inset="12dp"
+    app:neumorph_insetBottom="12dp"
+    app:neumorph_insetEnd="12dp"
+    app:neumorph_insetStart="12dp"
+    app:neumorph_insetTop="12dp"
+    app:neumorph_lightSource="leftTop"
+    app:neumorph_shadowColorDark="@color/shadow_dark"
+    app:neumorph_shadowColorLight="@color/shadow_light"
+    app:neumorph_shadowElevation="6dp"
+    app:neumorph_shapeAppearance="@style/CustomShapeAppearance"
+    app:neumorph_shapeType="flat"
+    app:neumorph_strokeColor="@color/stroke_color"
+    app:neumorph_strokeWidth="2dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/day_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gradient_blue"
+            android:gravity="center"
+            android:text="Dzień 1"
+            android:textColor="@color/white"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true">
+
+            <ImageButton
+                android:id="@+id/add_exercises_button"
+                android:layout_width="52dp"
+                android:layout_height="46dp"
+                android:background="@drawable/add2"
+                android:src="@android:color/transparent" />
+
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true">
+
+            <ImageButton
+                android:id="@+id/delete_day_button"
+                android:layout_width="52dp"
+                android:layout_height="46dp"
+                android:background="@drawable/delete"
+            android:src="@android:color/transparent" />
+        </FrameLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/exercises_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/day_title"
+            android:background="?attr/myBackground"
+            android:clipToPadding="false"
+            android:padding="16dp"
+            android:scrollbars="vertical" />
+
+    </RelativeLayout>
+</soup.neumorphism.NeumorphCardView>

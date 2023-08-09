@@ -1,0 +1,9 @@
+<resources>
+    <attr name="myTextColor" format="reference" />
+    <attr name="exerciseTextColor" format="reference" />
+    <attr name="myBackground" format="reference" />
+    <attr name="iconColor" format="reference" />
+    <attr name="exerciseBackground" format="reference" />
+    <attr name="exerciseTextColorDay" format="reference" />
+    <attr name="exerciseTextColorNight" format="reference" />
+</resources>

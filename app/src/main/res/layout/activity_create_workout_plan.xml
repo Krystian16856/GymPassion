@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
+    tools:context=".CreateWorkoutPlanActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/days_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/add_day_button"
+        android:padding="16dp"
+        android:clipToPadding="false"
+        android:scrollbars="vertical"/>
+
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/add_day_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/save_button"
+        android:layout_centerHorizontal="true"
+        android:text="Utwórz kolejny dzień"
+        app:neumorph_backgroundColor="@color/orange"
+        app:neumorph_shadowColorLight="@color/shadow_light"
+        app:neumorph_shadowColorDark="@color/shadow_dark"
+        app:neumorph_shapeType="flat" />
+
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/save_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Zapisz i przejdź dalej"
+        app:neumorph_backgroundColor="@color/orange"
+        app:neumorph_shadowColorLight="@color/shadow_light"
+        app:neumorph_shadowColorDark="@color/shadow_dark"
+        app:neumorph_shapeType="flat" />
+
+</RelativeLayout>

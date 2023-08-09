@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".MyApp"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApp"
+        tools:targetApi="31">
+        <activity
+            android:name=".LoadingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ChatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UserProfileActivity3"
+            android:exported="false" />
+        <activity
+            android:name=".UserProfileActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".InvitationsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UserProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FriendsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BMIResultsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BMICalculatorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MaxWeightsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CategoriesAdapter"
+            android:exported="false" />
+        <activity
+            android:name=".VideoViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ScheduleWorkoutActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".WorkoutHistoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DayWorkoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StartWorkoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EditPlanWorkoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SuccessActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".SettingsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ScheduleWorkoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".WelcomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CreateWorkoutPlanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ResetPasswordActivity"
+            android:exported="false" />
+        <activity android:name=".AddFriendActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.MyApp">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".RegistrationActivity"
+            android:exported="false"
+            android:theme="@style/Theme.MyApp" />
+        <activity
+            android:name=".SuccessActivity"
+            android:exported="false"
+            android:theme="@style/Theme.MyApp" />
+        <activity
+            android:name=".FullScreenVideoActivity"
+            android:exported="false"
+            android:screenOrientation="landscape" />
+        <activity android:name=".TextViewActivity" />
+        <activity android:name=".SelectExerciseActivity" />
+        <activity android:name=".ImageViewActivity" />
+        <activity android:name=".AgeHeightActivity" />
+
+        <service
+            android:name=".AlarmService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <service
+            android:name=".MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+
+
+
+        <receiver
+            android:name=".AlarmReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.LOCKED_BOOT_COMPLETED" />
+                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.android.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>

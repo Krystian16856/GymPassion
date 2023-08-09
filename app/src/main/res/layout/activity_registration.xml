@@ -1,0 +1,256 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.example.gympassion.RegistrationViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_gradient"
+        tools:context=".RegistrationActivity">
+
+        <soup.neumorphism.NeumorphCardView
+            android:id="@+id/cardViewNickname"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:padding="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardViewName"
+            app:neumorph_backgroundColor="@color/background_color"
+            app:neumorph_inset="12dp"
+            app:neumorph_insetBottom="12dp"
+            app:neumorph_insetEnd="12dp"
+            app:neumorph_insetStart="12dp"
+            app:neumorph_insetTop="12dp"
+            app:neumorph_lightSource="leftTop"
+            app:neumorph_shadowColorDark="@color/solid_dark_color"
+            app:neumorph_shadowColorLight="@color/solid_light_color"
+            app:neumorph_shadowElevation="6dp"
+            app:neumorph_shapeAppearance="@style/CustomShapeAppearance"
+            app:neumorph_shapeType="flat"
+            app:neumorph_strokeColor="@color/stroke_color"
+            app:neumorph_strokeWidth="2dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nazwa użytkownika">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editTextNickname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </soup.neumorphism.NeumorphCardView>
+
+
+        <soup.neumorphism.NeumorphCardView
+            android:id="@+id/cardViewName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="220dp"
+            android:ems="10"
+            android:padding="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:neumorph_backgroundColor="@color/background_color"
+            app:neumorph_inset="12dp"
+            app:neumorph_insetBottom="12dp"
+            app:neumorph_insetEnd="12dp"
+            app:neumorph_insetStart="12dp"
+            app:neumorph_insetTop="12dp"
+            app:neumorph_lightSource="leftTop"
+            app:neumorph_shadowColorDark="@color/solid_dark_color"
+            app:neumorph_shadowColorLight="@color/solid_light_color"
+            app:neumorph_shadowElevation="6dp"
+            app:neumorph_shapeAppearance="@style/CustomShapeAppearance"
+            app:neumorph_shapeType="flat"
+            app:neumorph_strokeColor="@color/stroke_color"
+            app:neumorph_strokeWidth="2dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Imię">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editTextName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </soup.neumorphism.NeumorphCardView>
+
+        <soup.neumorphism.NeumorphCardView
+            android:id="@+id/cardViewEmail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:padding="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardViewNickname"
+            app:neumorph_backgroundColor="@color/background_color"
+            app:neumorph_inset="12dp"
+            app:neumorph_insetBottom="12dp"
+            app:neumorph_insetEnd="12dp"
+            app:neumorph_insetStart="12dp"
+            app:neumorph_insetTop="12dp"
+            app:neumorph_lightSource="leftTop"
+            app:neumorph_shadowColorDark="@color/solid_dark_color"
+            app:neumorph_shadowColorLight="@color/solid_light_color"
+            app:neumorph_shadowElevation="6dp"
+            app:neumorph_shapeAppearance="@style/CustomShapeAppearance"
+            app:neumorph_shapeType="flat"
+            app:neumorph_strokeColor="@color/stroke_color"
+            app:neumorph_strokeWidth="2dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editTextEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </soup.neumorphism.NeumorphCardView>
+
+        <soup.neumorphism.NeumorphCardView
+            android:id="@+id/cardViewPassword"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:padding="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardViewEmail"
+            app:neumorph_backgroundColor="@color/background_color"
+            app:neumorph_inset="12dp"
+            app:neumorph_insetBottom="12dp"
+            app:neumorph_insetEnd="12dp"
+            app:neumorph_insetStart="12dp"
+            app:neumorph_insetTop="12dp"
+            app:neumorph_lightSource="leftTop"
+            app:neumorph_shadowColorDark="@color/solid_dark_color"
+            app:neumorph_shadowColorLight="@color/solid_light_color"
+            app:neumorph_shadowElevation="6dp"
+            app:neumorph_shapeAppearance="@style/CustomShapeAppearance"
+            app:neumorph_shapeType="flat"
+            app:neumorph_strokeColor="@color/stroke_color"
+            app:neumorph_strokeWidth="2dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/passwordTextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Hasło"
+                app:endIconDrawable="@drawable/ic_info_outline"
+                app:endIconMode="custom">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editTextPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:onTextChanged="@{(text, start, before, count) -> viewModel.passwordTextChanged(text.toString())}"
+                    android:text="@={viewModel.password}" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </soup.neumorphism.NeumorphCardView>
+
+        <soup.neumorphism.NeumorphCardView
+            android:id="@+id/cardViewConfirmPassword"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:padding="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardViewPassword"
+            app:neumorph_backgroundColor="@color/background_color"
+            app:neumorph_inset="12dp"
+            app:neumorph_insetBottom="12dp"
+            app:neumorph_insetEnd="12dp"
+            app:neumorph_insetStart="12dp"
+            app:neumorph_insetTop="12dp"
+            app:neumorph_lightSource="leftTop"
+            app:neumorph_shadowColorDark="@color/solid_dark_color"
+            app:neumorph_shadowColorLight="@color/solid_light_color"
+            app:neumorph_shadowElevation="6dp"
+            app:neumorph_shapeAppearance="@style/CustomShapeAppearance"
+            app:neumorph_shapeType="flat"
+            app:neumorph_strokeColor="@color/stroke_color"
+            app:neumorph_strokeWidth="2dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Powtórz Hasło"
+                app:endIconMode="password_toggle">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editTextConfirmPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </soup.neumorphism.NeumorphCardView>
+
+
+        <soup.neumorphism.NeumorphButton
+            android:id="@+id/buttonRegister"
+            style="@style/Widget.Neumorph.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:text="Zarejestruj się"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardViewConfirmPassword"
+            app:neumorph_backgroundColor="@color/orange"
+            app:neumorph_shapeType="flat" />
+
+        <soup.neumorphism.NeumorphButton
+            android:id="@+id/buttonGoToLogin"
+            style="@style/Widget.Neumorph.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:text="Zaloguj się"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonRegister"
+            app:neumorph_backgroundColor="@color/orange"
+            app:neumorph_shapeType="flat" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animationView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible"
+            app:lottie_autoPlay="false"
+            app:lottie_fileName="success.json"
+            app:lottie_loop="false" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

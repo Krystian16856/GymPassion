@@ -1,0 +1,68 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_profile"
+        android:title="Mój profil" />
+
+        <item
+            android:id="@+id/nav_max_exercises"
+        android:title="Moje maksy" />
+
+        <item
+            android:id="@+id/nav_bmi_calculator"
+        android:title="Oblicz BMI" />
+
+        <item
+            android:id="@+id/nav_friends"
+
+        android:title="Moi przyjaciele" />
+
+
+        <item
+            android:title=""
+            android:enabled="false" />
+
+        <item
+            android:title=""
+            android:enabled="false" />
+
+        <item
+            android:title=""
+            android:enabled="false" />
+
+        <item
+            android:title=""
+            android:enabled="false" />
+
+
+        <item
+            android:title=""
+            android:enabled="false" />
+
+        <item
+            android:title=""
+            android:enabled="false" />
+
+        <item
+            android:title=""
+            android:enabled="false" />
+
+        <item
+            android:title=""
+            android:enabled="false" />
+
+        <item
+            android:title=""
+            android:enabled="false" />
+    </group>
+
+
+    <item android:title="">
+        <menu>
+            <item
+                android:id="@+id/action_delete_account"
+                android:title="Usuń konto"
+                android:theme="@style/MyMenuItemStyle" />
+        </menu>
+    </item>
+</menu>

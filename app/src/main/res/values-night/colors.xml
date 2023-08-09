@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorTextLight">#FFFFFF</color>
+    <color name="colorTextDark">#000000</color>
+    <color name="exerciseTextColorDay">#FFFFFF</color>
+    <color name="exerciseTextColorNight">#000000</color>
+    <color name="shadow_light">#424242</color> <!-- Ciemny kolor cienia dla trybu ciemnego -->
+    <color name="shadow_dark">#000000</color> <!-- Czarny kolor cienia dla trybu ciemnego -->
+    <color name="button_background">#424242</color>
+
+
+</resources>

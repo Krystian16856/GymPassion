@@ -1,0 +1,4 @@
+<resources>
+    <dimen name="stroke_width">2dp</dimen>
+    <dimen name="text_size">35sp</dimen>
+</resources>

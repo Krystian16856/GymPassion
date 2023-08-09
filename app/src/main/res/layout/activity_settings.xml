@@ -1,0 +1,378 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/myBackground"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/myTextColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:gravity="center_horizontal"
+            android:text="Ustawienia aplikacji"
+            android:textSize="45sp"
+            android:textStyle="bold" />
+
+
+            <soup.neumorphism.NeumorphCardView
+                android:id="@+id/notification_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                app:neumorph_backgroundColor="@color/background_color"
+                app:neumorph_inset="16dp"
+                app:neumorph_insetBottom="16dp"
+                app:neumorph_insetEnd="16dp"
+                app:neumorph_insetStart="16dp"
+                app:neumorph_insetTop="16dp"
+                app:neumorph_lightSource="leftTop"
+                app:neumorph_shadowColorDark="@color/shadow_dark"
+                app:neumorph_shadowColorLight="@color/shadow_light"
+                app:neumorph_shadowElevation="8dp"
+                app:neumorph_shapeAppearance="@style/CustomShapeAppearance"
+                app:neumorph_shapeType="flat"
+                app:neumorph_strokeColor="@color/stroke_color"
+                app:neumorph_strokeWidth="2dp">
+
+                <RelativeLayout
+                    android:id="@+id/notification_row"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/notification_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text=" Powiadomienia"
+                        android:textColor="@color/black"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                    <Switch
+                        android:id="@+id/notification_switch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true" />
+
+                    <TextView
+                        android:id="@+id/notification_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/notification_switch"
+                        android:padding="8dp"
+                        android:text="Kiedy ta opcja jest włączona, otrzymasz przypomnienia o nadchodzących treningach i innych istotnych aktywnościach. Pomaga to utrzymać regularność treningów i zawsze być na bieżąco z Twoim planem fitness."
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:visibility="gone" />
+
+
+                </RelativeLayout>
+
+            </soup.neumorphism.NeumorphCardView>
+
+        <!-- Ustawienia Metryczne -->
+        <soup.neumorphism.NeumorphCardView
+            android:id="@+id/metric_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            app:neumorph_backgroundColor="@color/background_color"
+            app:neumorph_inset="16dp"
+            app:neumorph_insetBottom="16dp"
+            app:neumorph_insetEnd="16dp"
+            app:neumorph_insetStart="16dp"
+            app:neumorph_insetTop="16dp"
+            app:neumorph_lightSource="leftTop"
+            app:neumorph_shadowColorDark="@color/shadow_dark"
+            app:neumorph_shadowColorLight="@color/shadow_light"
+            app:neumorph_shadowElevation="8dp"
+            app:neumorph_shapeAppearance="@style/CustomShapeAppearance"
+            app:neumorph_shapeType="flat"
+            app:neumorph_strokeColor="@color/stroke_color"
+            app:neumorph_strokeWidth="2dp">
+
+            <RelativeLayout
+                android:id="@+id/metric_row"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/metric_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text=" Ustawienia metryczne"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <Switch
+                    android:id="@+id/metric_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true" />
+
+                <TextView
+                    android:id="@+id/metric_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/metric_switch"
+                    android:padding="8dp"
+                    android:text="Jeżeli opcja jest włączona, jednostki miar są europejskie (np. waga w kilogramach). Jeżeli opcja jest wyłączona, jednostki miar są amerykańskie (np. waga w funtach)."
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+        </soup.neumorphism.NeumorphCardView>
+
+        <!-- Tryb Ciemny -->
+        <soup.neumorphism.NeumorphCardView
+            android:id="@+id/dark_mode_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            app:neumorph_backgroundColor="@color/background_color"
+            app:neumorph_inset="16dp"
+            app:neumorph_insetBottom="16dp"
+            app:neumorph_insetEnd="16dp"
+            app:neumorph_insetStart="16dp"
+            app:neumorph_insetTop="16dp"
+            app:neumorph_lightSource="leftTop"
+            app:neumorph_shadowColorDark="@color/shadow_dark"
+            app:neumorph_shadowColorLight="@color/shadow_light"
+            app:neumorph_shadowElevation="8dp"
+            app:neumorph_shapeAppearance="@style/CustomShapeAppearance"
+            app:neumorph_shapeType="flat"
+            app:neumorph_strokeColor="@color/stroke_color"
+            app:neumorph_strokeWidth="2dp">
+
+            <RelativeLayout
+                android:id="@+id/dark_mode_row"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/dark_mode_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text=" Tryb ciemny"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <Switch
+                    android:id="@+id/dark_mode_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true" />
+
+                <TextView
+                    android:id="@+id/dark_mode_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/dark_mode_switch"
+                    android:padding="8dp"
+                    android:text="Tryb nocny zmienia schemat kolorów aplikacji na ciemniejszy, co jest przyjemniejsze dla oczu w słabym oświetleniu. Może to także pomóc w oszczędzaniu energii na niektórych urządzeniach z ekranami OLED."
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+
+        </soup.neumorphism.NeumorphCardView>
+
+        <!-- Ustawienia Prywatności -->
+        <soup.neumorphism.NeumorphCardView
+            android:id="@+id/privacy_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            app:neumorph_backgroundColor="@color/background_color"
+            app:neumorph_inset="16dp"
+            app:neumorph_insetBottom="16dp"
+            app:neumorph_insetEnd="16dp"
+            app:neumorph_insetStart="16dp"
+            app:neumorph_insetTop="16dp"
+            app:neumorph_lightSource="leftTop"
+            app:neumorph_shadowColorDark="@color/shadow_dark"
+            app:neumorph_shadowColorLight="@color/shadow_light"
+            app:neumorph_shadowElevation="8dp"
+            app:neumorph_shapeAppearance="@style/CustomShapeAppearance"
+            app:neumorph_shapeType="flat"
+            app:neumorph_strokeColor="@color/stroke_color"
+            app:neumorph_strokeWidth="2dp">
+
+            <RelativeLayout
+                android:id="@+id/privacy_row"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/privacy_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text=" Prywatność"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <Switch
+                    android:id="@+id/privacy_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true" />
+
+                <TextView
+                    android:id="@+id/privacy_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/privacy_switch"
+                    android:padding="8dp"
+                    android:text="Te ustawienia kontrolują, kto może zobaczyć Twój profil."
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:visibility="gone" />
+
+                <!-- Dodatkowe ustawienia prywatności -->
+                <LinearLayout
+                    android:id="@+id/privacy_additional_settings"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/privacy_description"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/privacy_friends_title"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text=" Znajomi mogą zobaczyć mój profil"
+                            android:textColor="@color/black"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <Switch
+                            android:id="@+id/privacy_friends_switch"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/privacy_friends_description"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="Jeśli opcja jest włączona, Twoi znajomi mogą zobaczyć Twój profil. Jeśli jest wyłączona, nikt nie może zobaczyć Twojego profilu."
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+            </RelativeLayout>
+        </soup.neumorphism.NeumorphCardView>
+
+
+
+        <FrameLayout
+            android:id="@+id/scheduled_workouts_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dark_mode_card"
+            android:padding="0dp">
+            <!-- Zaplanowane Treningi -->
+            <soup.neumorphism.NeumorphCardView
+                android:id="@+id/scheduled_workouts_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dark_mode_card"
+                android:padding="16dp"
+                app:neumorph_backgroundColor="@color/background_color"
+                app:neumorph_inset="16dp"
+                app:neumorph_insetBottom="16dp"
+                app:neumorph_insetEnd="16dp"
+                app:neumorph_insetStart="16dp"
+                app:neumorph_insetTop="16dp"
+                app:neumorph_lightSource="leftTop"
+                app:neumorph_shadowColorDark="@color/shadow_dark"
+                app:neumorph_shadowColorLight="@color/shadow_light"
+                app:neumorph_shadowElevation="8dp"
+                app:neumorph_shapeAppearance="@style/CustomShapeAppearance"
+                app:neumorph_shapeType="flat"
+                app:neumorph_strokeColor="@color/stroke_color"
+                app:neumorph_strokeWidth="2dp">
+
+
+                <RelativeLayout
+                    android:id="@+id/scheduled_workouts_row"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/scheduled_workouts_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text=" Dni treningowe"
+                        android:textColor="@color/black"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+            </soup.neumorphism.NeumorphCardView>
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/next_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Zapisz"
+        app:neumorph_backgroundColor="@color/orange"
+        app:neumorph_shadowColorLight="@color/shadow_light"
+        app:neumorph_shadowColorDark="@color/shadow_dark"
+        app:neumorph_shapeType="flat" />
+
+</RelativeLayout>

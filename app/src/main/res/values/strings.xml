@@ -1,0 +1,101 @@
+<resources>
+    <string-array name="greetings">
+        <item>Cześć %s, miło Cię znowu widzieć! 😊</item>
+        <item>Witaj %s, mamy na Ciebie dużo planów! 🏋️‍♀️</item>
+        <item>Hej %s, gotowy na kolejny trening? 💪</item>
+        <item>%s, jak dobrze Cię znowu widzieć! 🤗</item>
+        <item>%s, cieszymy się, że znów jesteś z nami! 🎉</item>
+        <item>%s, do dzieła! Czas na trening! 💥</item>
+        <item>Siema %s, zaczynamy trening! 🚀</item>
+        <item>Witaj na pokładzie, %s! 🎊</item>
+        <item>Super, że jesteś, %s! 👍</item>
+        <item>Cześć %s, jesteś gotowy do działania? 🌟</item>
+        <item>%s, po prostu nie mogliśmy się doczekać, aż wrócisz! 🕺</item>
+        <item>Cześć %s! Dajmy z siebie wszystko dziś! 💯</item>
+        <item>Cześć %s, twoje mięśnie na Ciebie czekają! 💪</item>
+        <item>%s, gotowy do rozbicia swojego rekordu? ⏱️</item>
+        <item>Witaj %s! Pora zapalić kalorie! 🔥</item>
+        <item>Cześć %s, jesteś gotów do podjęcia wyzwania? 🏆</item>
+        <item>Hej %s! Czas rozbudować te mięśnie! 🏋️‍♂️</item>
+        <item>Witaj %s, twój dzień na pewno będzie świetny! 🌞</item>
+        <item>Cześć %s, lets rock this workout! 🎸</item>
+        <item>Hej %s! Czas na endorfiny! 😃</item>
+        <item>Witaj %s, gotowy na kolejne wyzwanie? 🥊</item>
+        <item>Cześć %s, to Twój dzień! Daj z siebie wszystko! 💃</item>
+        <item>Hej %s, czas pokazać, co potrafisz! 🦾</item>
+        <item>%s, jesteś niezastąpiony! Cieszmy się treningiem! 🎇</item>
+        <item>%s, zadbajmy o formę! 😼</item>
+        <item>Cześć %s, do dzieła! Czas na trening! 🚴‍♂️</item>
+        <item>Siema %s, zaczynamy trening! 🤸‍♂️</item>
+        <item>Witaj na pokładzie, %s! Ćwiczymy razem! 🧘‍♀️</item>
+        <item>Super, że jesteś, %s! Czas ruszyć z kopyta! 🐎</item>
+        <item>Cześć %s, jesteś gotowy do działania? Pora na trening! 🌈</item>
+        <item>%s, dziś razem pokonamy ten trening! 💎</item>
+        <item>Cześć %s! Dajmy z siebie wszystko dziś! 🥇</item>
+        <item>Cześć %s, twoje mięśnie na Ciebie czekają! 🦵</item>
+        <item>%s, gotowy do rozbicia swojego rekordu? 🏁</item>
+        <item>Witaj %s! Pora spalić te kalorie! 🔥</item>
+        <item>Cześć %s, jesteś gotów do podjęcia wyzwania? 🦈</item>
+        <item>Hej %s! Czas na zdrowy wysiłek! 🍏</item>
+        <item>Witaj %s, twój dzień na pewno będzie świetny! 🌼</item>
+        <item>Hej %s! Czas na endorfiny! 🌈</item>
+        <item>Witaj ponownie, %s! Czas się ruszyć! 🏃‍♀️</item>
+        <item>Cześć %s, twoje ciało Cię potrzebuje! 🏋️‍♂️</item>
+        <item>%s, jesteś gotowy do zrobienia kroku dalej? 🚀</item>
+        <item>Cześć %s, nie ma nic lepszego niż dobry trening! ⚡</item>
+        <item>Witaj %s! Przygotuj się na ekscytujący trening! 🌪️</item>
+        <item>Cześć %s! Czas przekroczyć granice! 🏞️</item>
+        <item>%s, jesteś gotów poczuć moc? 🦾</item>
+        <item>Cześć %s, zróbmy coś niesamowitego dzisiaj! 🏅</item>
+        <item>Hej %s! Czas na trochę zabawy z treningiem! 🎭</item>
+        <item>Witaj %s, uda Ci się! 💫</item>
+    </string-array>
+    <integer-array name="colors">
+        <item>@color/color1</item>
+        <item>@color/color2</item>
+        <item>@color/color3</item>
+        <item>@color/color4</item>
+        <item>@color/color5</item>
+        <item>@color/color6</item>
+        <item>@color/color7</item>
+        <item>@color/color8</item>
+        <item>@color/color9</item>
+        <item>@color/color10</item>
+        <item>@color/color11</item>
+        <item>@color/color12</item>
+        <item>@color/color13</item>
+        <item>@color/color14</item>
+        <item>@color/color15</item>
+        <item>@color/color16</item>
+        <item>@color/color17</item>
+        <item>@color/color18</item>
+        <item>@color/color19</item>
+        <item>@color/color20</item>
+        <item>@color/color21</item>
+        <item>@color/color22</item>
+        <item>@color/color23</item>
+        <item>@color/color24</item>
+        <item>@color/color25</item>
+        <item>@color/color26</item>
+        <item>@color/color27</item>
+        <item>@color/color28</item>
+        <item>@color/color29</item>
+        <item>@color/color30</item>
+    </integer-array>
+
+    <string name="channel_name">Treningi</string>
+    <string name="channel_description">Powiadomienia o nadchodzących treningach</string>
+
+    <declare-styleable name="webImg">
+        <attr name="defaultRawId" format="reference" />
+        <attr name="neutralRawId" format="reference" />
+        <attr name="finalRawId" format="reference" />
+        <attr name="defaultCount" format="integer" />
+        <attr name="neutralCount" format="integer" />
+        <attr name="finalCount" format="integer" />
+    </declare-styleable>
+    <string name="app_name">GymPassion</string>
+
+</resources>
+
+

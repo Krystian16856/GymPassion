@@ -1,0 +1,28 @@
+<resources>
+    <style name="Theme.MyApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="editTextStyle">@style/MyEditTextStyle</item>
+        <item name="neumorphCardViewStyle">@style/MyNeumorphCardViewStyle</item>
+        <item name="neumorphButtonStyle">@style/MyNeumorphButtonStyle</item>
+        <item name="myTextColor">@color/colorTextDark</item>
+        <item name="myBackground">@drawable/background_dark</item>
+        <item name="iconColor">@color/iconColorDark</item>
+        <item name="exerciseBackground">@drawable/background_gradient_inverse</item>
+        <item name="exerciseTextColor">@color/colorTextLight</item>
+        <item name="exerciseTextColorDay">@color/exercise_text_color_light</item>
+        <item name="exerciseTextColorNight">@color/exercise_text_color_dark</item>
+
+    </style>
+
+    <style name="myTextColor" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/colorTextLight</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ExerciseNameTextNight" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">?attr/exerciseTextColorNight</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+</resources>
+

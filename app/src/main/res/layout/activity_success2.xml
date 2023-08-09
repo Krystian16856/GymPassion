@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/myBackground"
+    tools:context=".SuccessActivity2">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/success_animation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="success2.json"
+        app:lottie_loop="true"
+        app:lottie_speed="1.5" />
+
+    <TextView
+        android:id="@+id/success_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="Sukces! \nMożesz teraz rozpocząć trening."
+        android:textAlignment="center"
+        style="@style/myTextColor"
+        android:textSize="40sp" />
+
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/go_to_dashboard_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/success_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Dalej"
+        android:textColor="@color/black"
+        app:neumorph_shadowColorLight="@color/shadow_light"
+        app:neumorph_shadowColorDark="@color/shadow_dark"
+        android:textSize="18sp" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        app:lottie_autoPlay="false"
+        app:lottie_fileName="success.json"
+        app:lottie_loop="false" />
+
+</RelativeLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "68574499833",
+    "project_id": "gympassion-179b2",
+    "storage_bucket": "gympassion-179b2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:68574499833:android:c017d76eb9416f47162328",
+        "android_client_info": {
+          "package_name": "com.example.gympassion"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "68574499833-n6frno6rlfbqhu6rcobvbg3t3r7ctrha.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB5Un8SjUz0v0iTU7U0qmsVupsAITbzGmI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "68574499833-n6frno6rlfbqhu6rcobvbg3t3r7ctrha.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

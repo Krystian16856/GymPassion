@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wybierz dni oraz godziny treningów"
+            android:gravity="center_horizontal"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="45sp"
+            android:layout_marginBottom="16dp"/>
+
+        <soup.neumorphism.NeumorphCardView
+            android:id="@+id/monday_card"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="16dp"
+            app:neumorph_backgroundColor="@color/background_color"
+            app:neumorph_inset="16dp"
+            app:neumorph_insetBottom="16dp"
+            app:neumorph_insetEnd="16dp"
+            app:neumorph_insetStart="16dp"
+            app:neumorph_insetTop="16dp"
+            app:neumorph_lightSource="leftTop"
+            app:neumorph_shadowColorDark="@color/shadow_dark"
+            app:neumorph_shadowColorLight="@color/shadow_light"
+            app:neumorph_shadowElevation="8dp"
+            app:neumorph_shapeAppearance="@style/CustomShapeAppearance"
+            app:neumorph_shapeType="flat"
+            app:neumorph_strokeColor="@color/stroke_color"
+            app:neumorph_strokeWidth="2dp">
+
+            <TableRow
+                android:id="@+id/monday_row"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?android:attr/selectableItemBackground">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Poniedziałek"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:gravity="center" />
+
+                <Spinner
+                    android:id="@+id/spinnerStartMonday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:entries="@array/workout_hours"/>
+
+
+            </TableRow>
+
+        </soup.neumorphism.NeumorphCardView>
+
+
+
+    <soup.neumorphism.NeumorphCardView
+        android:id="@+id/tuesday_card"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="16dp"
+        app:neumorph_backgroundColor="@color/background_color"
+        app:neumorph_inset="16dp"
+        app:neumorph_insetBottom="16dp"
+        app:neumorph_insetEnd="16dp"
+        app:neumorph_insetStart="16dp"
+        app:neumorph_insetTop="16dp"
+        app:neumorph_lightSource="leftTop"
+        app:neumorph_shadowColorDark="@color/shadow_dark"
+        app:neumorph_shadowColorLight="@color/shadow_light"
+        app:neumorph_shadowElevation="8dp"
+        app:neumorph_shapeAppearance="@style/CustomShapeAppearance"
+        app:neumorph_shapeType="flat"
+        app:neumorph_strokeColor="@color/stroke_color"
+        app:neumorph_strokeWidth="2dp">
+
+        <TableRow
+            android:id="@+id/tuesday_row"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?android:attr/selectableItemBackground">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Wtorek"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:gravity="center" />
+
+            <Spinner
+                android:id="@+id/spinnerStartTuesday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:entries="@array/workout_hours"/>
+
+
+        </TableRow>
+
+    </soup.neumorphism.NeumorphCardView>
+
+    <soup.neumorphism.NeumorphCardView
+        android:id="@+id/wednesday_card"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="16dp"
+        app:neumorph_backgroundColor="@color/background_color"
+        app:neumorph_inset="16dp"
+        app:neumorph_insetBottom="16dp"
+        app:neumorph_insetEnd="16dp"
+        app:neumorph_insetStart="16dp"
+        app:neumorph_insetTop="16dp"
+        app:neumorph_lightSource="leftTop"
+        app:neumorph_shadowColorDark="@color/shadow_dark"
+        app:neumorph_shadowColorLight="@color/shadow_light"
+        app:neumorph_shadowElevation="8dp"
+        app:neumorph_shapeAppearance="@style/CustomShapeAppearance"
+        app:neumorph_shapeType="flat"
+        app:neumorph_strokeColor="@color/stroke_color"
+        app:neumorph_strokeWidth="2dp">
+
+        <TableRow
+            android:id="@+id/wednesday_row"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?android:attr/selectableItemBackground">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Środa"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:gravity="center" />
+
+            <Spinner
+                android:id="@+id/spinnerStartWednesday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:entries="@array/workout_hours"/>
+
+        </TableRow>
+
+    </soup.neumorphism.NeumorphCardView>
+
+        <soup.neumorphism.NeumorphCardView
+            android:id="@+id/thursday_card"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="16dp"
+            app:neumorph_backgroundColor="@color/background_color"
+            app:neumorph_inset="16dp"
+            app:neumorph_insetBottom="16dp"
+            app:neumorph_insetEnd="16dp"
+            app:neumorph_insetStart="16dp"
+            app:neumorph_insetTop="16dp"
+            app:neumorph_lightSource="leftTop"
+            app:neumorph_shadowColorDark="@color/shadow_dark"
+            app:neumorph_shadowColorLight="@color/shadow_light"
+            app:neumorph_shadowElevation="8dp"
+            app:neumorph_shapeAppearance="@style/CustomShapeAppearance"
+            app:neumorph_shapeType="flat"
+            app:neumorph_strokeColor="@color/stroke_color"
+            app:neumorph_strokeWidth="2dp">
+
+            <TableRow
+                android:id="@+id/thursday_row"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?android:attr/selectableItemBackground">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Czwartek"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:gravity="center" />
+
+                <Spinner
+                    android:id="@+id/spinnerStartThursday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:entries="@array/workout_hours"/>
+
+
+            </TableRow>
+
+        </soup.neumorphism.NeumorphCardView>
+
+        <soup.neumorphism.NeumorphCardView
+            android:id="@+id/friday_card"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="16dp"
+            app:neumorph_backgroundColor="@color/background_color"
+            app:neumorph_inset="16dp"
+            app:neumorph_insetBottom="16dp"
+            app:neumorph_insetEnd="16dp"
+            app:neumorph_insetStart="16dp"
+            app:neumorph_insetTop="16dp"
+            app:neumorph_lightSource="leftTop"
+            app:neumorph_shadowColorDark="@color/shadow_dark"
+            app:neumorph_shadowColorLight="@color/shadow_light"
+            app:neumorph_shadowElevation="8dp"
+            app:neumorph_shapeAppearance="@style/CustomShapeAppearance"
+            app:neumorph_shapeType="flat"
+            app:neumorph_strokeColor="@color/stroke_color"
+            app:neumorph_strokeWidth="2dp">
+
+            <TableRow
+                android:id="@+id/friday_row"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?android:attr/selectableItemBackground">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Piątek"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:gravity="center" />
+
+                <Spinner
+                    android:id="@+id/spinnerStartFriday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:entries="@array/workout_hours"/>
+
+
+            </TableRow>
+
+        </soup.neumorphism.NeumorphCardView>
+
+        <soup.neumorphism.NeumorphCardView
+            android:id="@+id/saturday_card"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="16dp"
+            app:neumorph_backgroundColor="@color/background_color"
+            app:neumorph_inset="16dp"
+            app:neumorph_insetBottom="16dp"
+            app:neumorph_insetEnd="16dp"
+            app:neumorph_insetStart="16dp"
+            app:neumorph_insetTop="16dp"
+            app:neumorph_lightSource="leftTop"
+            app:neumorph_shadowColorDark="@color/shadow_dark"
+            app:neumorph_shadowColorLight="@color/shadow_light"
+            app:neumorph_shadowElevation="8dp"
+            app:neumorph_shapeAppearance="@style/CustomShapeAppearance"
+            app:neumorph_shapeType="flat"
+            app:neumorph_strokeColor="@color/stroke_color"
+            app:neumorph_strokeWidth="2dp">
+
+            <TableRow
+                android:id="@+id/saturday_row"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?android:attr/selectableItemBackground">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Sobota"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:gravity="center" />
+
+                <Spinner
+                    android:id="@+id/spinnerStartSaturday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:entries="@array/workout_hours"/>
+
+
+            </TableRow>
+
+        </soup.neumorphism.NeumorphCardView>
+
+        <soup.neumorphism.NeumorphCardView
+            android:id="@+id/sunday_card"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="16dp"
+            app:neumorph_backgroundColor="@color/background_color"
+            app:neumorph_inset="16dp"
+            app:neumorph_insetBottom="16dp"
+            app:neumorph_insetEnd="16dp"
+            app:neumorph_insetStart="16dp"
+            app:neumorph_insetTop="16dp"
+            app:neumorph_lightSource="leftTop"
+            app:neumorph_shadowColorDark="@color/shadow_dark"
+            app:neumorph_shadowColorLight="@color/shadow_light"
+            app:neumorph_shadowElevation="8dp"
+            app:neumorph_shapeAppearance="@style/CustomShapeAppearance"
+            app:neumorph_shapeType="flat"
+            app:neumorph_strokeColor="@color/stroke_color"
+            app:neumorph_strokeWidth="2dp">
+
+            <TableRow
+                android:id="@+id/sunday_row"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?android:attr/selectableItemBackground">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Niedziela"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:gravity="center" />
+
+                <Spinner
+                    android:id="@+id/spinnerStartSunday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:entries="@array/workout_hours"/>
+
+
+            </TableRow>
+
+        </soup.neumorphism.NeumorphCardView>
+    </LinearLayout>
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/next_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Zapisz i przejdź dalej"
+        app:neumorph_backgroundColor="@color/orange"
+        app:neumorph_shadowColorLight="@color/shadow_light"
+        app:neumorph_shadowColorDark="@color/shadow_dark"
+        app:neumorph_shapeType="flat" />
+</RelativeLayout>

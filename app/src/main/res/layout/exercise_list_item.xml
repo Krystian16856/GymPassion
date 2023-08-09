@@ -1,0 +1,84 @@
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/translated_name_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:gravity="center_horizontal"
+            android:text="Ćwiczenie" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/png_file_icon"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:focusable="true"
+                android:src="@drawable/list"
+                app:tint="?attr/iconColor"/>
+
+            <ImageView
+                android:id="@+id/webp_file_icon"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:focusable="true"
+                android:src="@drawable/play"
+                app:tint="?attr/iconColor"/>
+
+            <ImageView
+                android:id="@+id/cancel_icon"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:src="@drawable/cancel"
+                android:visibility="gone"
+                app:tint="?attr/iconColor"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/exercise_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/sets"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint="Sets"/>
+
+            <EditText
+                android:id="@+id/repetitions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint="Repetitions"/>
+        </LinearLayout>
+        <View
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#000000" />
+
+
+    </LinearLayout>

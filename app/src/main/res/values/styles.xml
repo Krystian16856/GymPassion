@@ -1,0 +1,93 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Theme.MyApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="editTextStyle">@style/MyEditTextStyle</item>
+        <item name="neumorphCardViewStyle">@style/MyNeumorphCardViewStyle</item>
+        <item name="neumorphButtonStyle">@style/MyNeumorphButtonStyle</item>
+        <item name="myTextColor">@color/colorTextLight</item>
+        <item name="myBackground">@drawable/background_gradient</item>
+        <item name="iconColor">@color/iconColorLight</item>
+        <item name="exerciseBackground">@drawable/background_dark_inverse</item>
+        <item name="exerciseTextColor">@color/colorTextDark</item>
+        <item name="exerciseTextColorDay">@color/exercise_text_color_light</item>
+        <item name="exerciseTextColorNight">@color/exercise_text_color_dark</item>
+        <item name="android:windowBackground">@drawable/background_dark</item>
+
+
+    </style>
+
+    <style name="ShapeAppearanceOverlay.AppointmentImageView" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="MyMenuItemStyle" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">#FF0000</item> <!-- czerwony kolor -->
+    </style>
+
+
+
+
+    <!-- Custom EditText style -->
+    <style name="MyEditTextStyle">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Custom NeumorphCardView style -->
+    <style name="MyNeumorphCardViewStyle" parent="Widget.Neumorph.CardView">
+        <item name="neumorph_backgroundColor">@color/background_color</item>
+        <item name="neumorph_inset">12dp</item>
+        <item name="neumorph_insetBottom">12dp</item>
+        <item name="neumorph_insetEnd">12dp</item>
+        <item name="neumorph_insetStart">12dp</item>
+        <item name="neumorph_insetTop">12dp</item>
+        <item name="neumorph_lightSource">leftTop</item>
+        <item name="neumorph_shadowColorDark">@color/solid_dark_color</item>
+        <item name="neumorph_shadowColorLight">@color/solid_light_color</item>
+        <item name="neumorph_shadowElevation">6dp</item>
+        <item name="neumorph_shapeAppearance">@style/CustomShapeAppearance</item>
+        <item name="neumorph_shapeType">flat</item>
+        <item name="neumorph_strokeColor">@color/stroke_color</item>
+        <item name="neumorph_strokeWidth">2dp</item>
+    </style>
+
+    <!-- Custom NeumorphButton style -->
+    <style name="MyNeumorphButtonStyle" parent="Widget.Neumorph.Button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="neumorph_backgroundColor">@color/orange</item>
+        <item name="neumorph_shapeType">flat</item>
+    </style>
+    <style name="CustomShapeAppearance">
+        <item name="neumorph_cornerFamily">rounded</item>
+        <item name="neumorph_cornerSize">16dp</item>
+        <item name="neumorph_cornerSizeTopLeft">16dp</item>
+        <item name="neumorph_cornerSizeTopRight">16dp</item>
+        <item name="neumorph_cornerSizeBottomLeft">16dp</item>
+        <item name="neumorph_cornerSizeBottomRight">16dp</item>
+    </style>
+
+    <style name="myTextColor" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">?attr/myTextColor</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ExerciseNameTextDay" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">?attr/exerciseTextColorDay</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="SpinnerStyle" parent="Widget.AppCompat.Spinner.Underlined">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+
+
+</resources>

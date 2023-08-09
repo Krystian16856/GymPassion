@@ -1,0 +1,196 @@
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/myBackground"
+        tools:context=".DashboardActivity">
+
+        <TextView
+            android:id="@+id/welcome_text"
+            style="@style/myTextColor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:textAlignment="center"
+            android:textSize="28sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineVertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineHorizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <soup.neumorphism.NeumorphCardView
+            android:id="@+id/start_workout_button"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@id/guidelineHorizontal"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toStartOf="@id/guidelineVertical"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.93"
+            app:neumorph_shadowColorDark="@color/shadow_dark"
+            app:neumorph_shadowColorLight="@color/shadow_light"
+            app:neumorph_shapeType="flat">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="178dp"
+                android:src="@drawable/gym" />
+        </soup.neumorphism.NeumorphCardView>
+
+        <soup.neumorphism.NeumorphCardView
+            android:id="@+id/workout_history_button"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@id/guidelineHorizontal"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/guidelineVertical"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.93"
+            app:neumorph_shadowColorDark="@color/shadow_dark"
+            app:neumorph_shadowColorLight="@color/shadow_light"
+            app:neumorph_shapeType="flat">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/results" />
+        </soup.neumorphism.NeumorphCardView>
+
+        <soup.neumorphism.NeumorphCardView
+            android:id="@+id/change_workout_plan_button"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toStartOf="@id/guidelineVertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/guidelineHorizontal"
+            app:layout_constraintVertical_bias="0.07999998"
+            app:neumorph_shadowColorDark="@color/shadow_dark"
+            app:neumorph_shadowColorLight="@color/shadow_light"
+            app:neumorph_shapeType="flat">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/plan" />
+        </soup.neumorphism.NeumorphCardView>
+
+        <soup.neumorphism.NeumorphCardView
+            android:id="@+id/settings_button"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/guidelineVertical"
+            app:layout_constraintTop_toTopOf="@id/guidelineHorizontal"
+            app:layout_constraintVertical_bias="0.07999998"
+            app:neumorph_shadowColorDark="@color/shadow_dark"
+            app:neumorph_shadowColorLight="@color/shadow_light"
+            app:neumorph_shapeType="flat">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/settings" />
+        </soup.neumorphism.NeumorphCardView>
+
+        <soup.neumorphism.NeumorphImageButton
+            android:id="@+id/logoutButton"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginBottom="30dp"
+            android:src="@drawable/logout"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:neumorph_inset="6dp"
+            app:neumorph_shadowColorDark="@color/shadow_dark"
+            app:neumorph_shadowColorLight="@color/shadow_light"
+            app:neumorph_shadowElevation="6dp"
+            app:neumorph_shapeType="flat" />
+
+        <soup.neumorphism.NeumorphImageButton
+            android:id="@+id/user_icon"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/user"
+            app:layout_constraintBottom_toTopOf="@id/workout_history_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/welcome_text"
+            app:layout_constraintVertical_bias="1.0"
+            app:neumorph_inset="6dp"
+            app:neumorph_shadowColorDark="@color/shadow_dark"
+            app:neumorph_shadowColorLight="@color/shadow_light"
+            app:neumorph_shadowElevation="6dp"
+            app:neumorph_shapeType="flat" />
+
+        <soup.neumorphism.NeumorphImageButton
+            android:id="@+id/newUserButton"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/newuser"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:neumorph_inset="6dp"
+            app:neumorph_shadowColorDark="@color/shadow_dark"
+            app:neumorph_shadowColorLight="@color/shadow_light"
+            app:neumorph_shadowElevation="6dp"
+            app:neumorph_shapeType="flat"
+            android:visibility="gone"/>
+
+
+        <soup.neumorphism.NeumorphImageButton
+        android:id="@+id/newMessageButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/newmessages"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:neumorph_inset="6dp"
+        app:neumorph_shadowColorDark="@color/shadow_dark"
+        app:neumorph_shadowColorLight="@color/shadow_light"
+        app:neumorph_shadowElevation="6dp"
+        app:neumorph_shapeType="flat"
+        android:visibility="gone"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        app:menu="@menu/menu_drawer" />
+
+</androidx.drawerlayout.widget.DrawerLayout>
